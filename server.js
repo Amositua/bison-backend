@@ -12,7 +12,7 @@ const port = process.env.PORT || 8000;
 connectDB(); // connect to mongoDB
 
 const app = express();
-app.use(cors({ origin: 'http://127.0.0.1:5502' }));
+app.use(cors());
 
 // Body parser middleware
 app.use(express.json());
