@@ -81,7 +81,7 @@ const registerUser = asyncHandler(async (req, res) => {
         message: 'Successful Registration'
       });
     } catch (error) {
-      console.error('Failed to send confirmation email:', error);
+      console.log('Failed to send confirmation email:', error);
       res.status(500).json({ error: 'Registration successful but email could not be sent.' });
     }
   } else {
